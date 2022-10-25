@@ -28,7 +28,7 @@ public class Food : MonoBehaviour
         }
         //print(timer);
 
-        if (timer >= 10.0f)
+        if (timer >= 5.0f)
         {
             caCuit = false;
             print("C'est cuit ! ");
