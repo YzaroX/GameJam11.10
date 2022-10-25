@@ -7,7 +7,8 @@ public class Food : MonoBehaviour
     private Rigidbody rbGO;
     private bool sleeping;
     private bool caCuit = false;
-    private float time = 0f;
+    float timer = 0f;
+    
 
     void Start()
     {
@@ -17,15 +18,21 @@ public class Food : MonoBehaviour
 
     void Update()
     {
-        print(Time.time);
         if (sleeping == false)
         {
             rbGO.WakeUp();
         }
         if (caCuit == false)
         {
-            time = 0f;
-        } 
+            timer = 0f;
+        }
+        //print(timer);
+
+        if (timer >= 10.0f)
+        {
+            caCuit = false;
+            print("C'est cuit ! ");
+        }
     }
 
     private void OnCollisionStay(Collision collision)
@@ -35,20 +42,20 @@ public class Food : MonoBehaviour
             if (collision.gameObject.name == ("Moteur"))
             {
                 caCuit = true;
-                time = Time.time;
-                print("Ca cuit");
-
-                if (time <= 2f)
-                {
-                    caCuit = false;
-                    print("C'est cuit !");
-                }
+                timer += Time.deltaTime;
             }
             else
             {
                 caCuit = false;
-                print("Ca cuit plu");
             }
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == ("Sol"))
+        {
+            Destroy(gameObject);
         }
     }
 }

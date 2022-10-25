@@ -38,7 +38,6 @@ public class Pickup : MonoBehaviour
             else
             {
                 DropObject();
-                print("Drop");
             }
         }
         if (heldObj != null)
