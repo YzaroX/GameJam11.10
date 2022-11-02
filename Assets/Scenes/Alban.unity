@@ -1264,8 +1264,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -105.1}
-  m_SizeDelta: {x: 100, y: 50}
+  m_AnchoredPosition: {x: 77.9563, y: -162.34387}
+  m_SizeDelta: {x: 155.9127, y: 164.4879}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &862567427
 MonoBehaviour:
@@ -1287,7 +1287,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 'azertyui
+
+    poiuytre
+
+    qqsdfgh'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1350,7 +1354,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -666.86145, w: 0}
+  m_margin: {x: 0, y: 0, z: -438.255, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3458,7 +3462,7 @@ MonoBehaviour:
   clientPrefab: {fileID: 8473734946177626661, guid: a0ca617a3dbf10c4a96d4bf5dc33c9c1, type: 3}
   spawnPoint: {fileID: 822226832}
   commands: {fileID: 862567427}
-  timerInterval: 1
+  timerInterval: 99999
 --- !u!4 &2088138794
 Transform:
   m_ObjectHideFlags: 0
@@ -3753,7 +3757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6055400116780195236, guid: 8804d82179cc5ad48958aaa0664881f9, type: 3}
       propertyPath: m_Name
-      value: Saucisse
+      value: Sausage
       objectReference: {fileID: 0}
     - target: {fileID: 6055400116780195236, guid: 8804d82179cc5ad48958aaa0664881f9, type: 3}
       propertyPath: m_IsActive
@@ -3770,7 +3774,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6931589282071116881, guid: 3d243be06c6f51a4cae3c3f8aed183e2, type: 3}
       propertyPath: m_Name
-      value: Pain
+      value: Breed
       objectReference: {fileID: 0}
     - target: {fileID: 6931589282071116881, guid: 3d243be06c6f51a4cae3c3f8aed183e2, type: 3}
       propertyPath: m_IsActive
@@ -3831,7 +3835,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7892923242856483410, guid: 751fcfcf22963674fb6da2215fe4ba72, type: 3}
       propertyPath: m_Name
-      value: Oeuf
+      value: Egg
       objectReference: {fileID: 0}
     - target: {fileID: 7892923242856483417, guid: 751fcfcf22963674fb6da2215fe4ba72, type: 3}
       propertyPath: m_RootOrder
