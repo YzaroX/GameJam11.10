@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7892923242856483418}
   - component: {fileID: 7892923242856483416}
   m_Layer: 0
-  m_Name: Oeuf
+  m_Name: Egg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -32,12 +32,13 @@ public class Food : MonoBehaviour
         {
             caCuit = false;
             print("C'est cuit ! ");
+            gameObject.tag = "Cuit";
         }
     }
 
     private void OnCollisionStay(Collision collision)
     {
-        if (gameObject.name == ("Oeuf") || gameObject.name == ("Pain") || gameObject.name == ("Saucisse"))
+        if (gameObject.name == ("Egg") || gameObject.name == ("Breed") || gameObject.name == ("Sausage"))
         {
             if (collision.gameObject.name == ("Moteur"))
             {

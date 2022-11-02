@@ -10,22 +10,22 @@ public class InstantiateFood : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.name == "Oeuf")
+        if (collision.gameObject.name == "Egg")
         {
             var cloneEgg = Instantiate(eggPrefab, spawnEgg.transform.position, Quaternion.identity);
-            cloneEgg.name = "Oeuf";
+            cloneEgg.name = "Egg";
         }
 
-        if (collision.gameObject.name == "Saucisse")
+        if (collision.gameObject.name == "Sausage")
         {
             var cloneSausage = Instantiate(sausagePrefab, spawnSausage.transform.position, Quaternion.identity);
-            cloneSausage.name = "Saucisse";
+            cloneSausage.name = "Sausage";
         }
 
-        if (collision.gameObject.name == "Pain")
+        if (collision.gameObject.name == "Breed")
         {
             var cloneBreed = Instantiate(breedPrefab, spawnBreed.transform.position, Quaternion.identity);
-            cloneBreed.name = "Pain";
+            cloneBreed.name = "Breed";
         }
     }
 }

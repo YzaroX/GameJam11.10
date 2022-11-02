@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,13 +10,26 @@ public class GameManager : MonoBehaviour
 
     public GameObject spawnPoint;
 
+    public TMP_Text commands;
+    public static TMP_Text theCommands;
+
     float timer, tick;
     public float timerInterval = 5f;
+
+    public static int compteur = 0;
+
+    private void Awake()
+    {
+        theCommands = commands;
+    }
 
     private void Start()
     {
         timer = (int)Time.time;
         tick = timerInterval;
+        compteur++;
+        var cloneClient = Instantiate(clientPrefab, spawnPoint.transform.position, Quaternion.identity);
+        cloneClient.name = "Client n°" + compteur;
     }
 
     // Update is called once per frame
@@ -25,25 +40,12 @@ public class GameManager : MonoBehaviour
         if (timer == tick)
         {
             tick = timer + timerInterval;
+
+            compteur++;
             var cloneClient = Instantiate(clientPrefab, spawnPoint.transform.position, Quaternion.identity);
-            cloneClient.name = "Client";
+            cloneClient.name = "Client n°" + compteur;
             print("check");
 
         }
-
-        //timer += Time.time;
-
-        //if (timer > 10.0f)
-        //{
-        //    check = true;
-        //}
-
-        //if (check == true)
-        //{
-        //    check = false;
-        //    var cloneClient = Instantiate(clientPrefab, spawnPoint.transform.position, Quaternion.identity);
-        //    cloneClient.name = "Client";
-        //    timer = 0.0f;
-        //}
     }
 }

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6055400116780195235}
   - component: {fileID: 715769510085180483}
   m_Layer: 0
-  m_Name: Saucisse
+  m_Name: Sausage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
