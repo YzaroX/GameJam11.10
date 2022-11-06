@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class InstantiateFood : MonoBehaviour
 {
-    public GameObject spawnEgg, spawnBreed, spawnSausage;
+    public GameObject spawnEgg, spawnBreed, spawnSausage, spawnSteak;
 
-    public GameObject eggPrefab, breedPrefab, sausagePrefab;
+    public GameObject eggPrefab, breedPrefab, sausagePrefab, steakPrefab;
 
     private void OnCollisionExit(Collision collision)
     {
@@ -25,7 +25,13 @@ public class InstantiateFood : MonoBehaviour
         if (collision.gameObject.name == "Breed")
         {
             var cloneBreed = Instantiate(breedPrefab, spawnBreed.transform.position, Quaternion.identity);
-            cloneBreed.name = "Breed";
+            cloneBreed.name = "TheBreed";
+        }
+
+        if (collision.gameObject.name == "Steak")
+        {
+            var cloneSteak = Instantiate(steakPrefab, spawnSteak.transform.position, Quaternion.identity);
+            cloneSteak.name = "Steak";
         }
     }
 }

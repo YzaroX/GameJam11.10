@@ -25,7 +25,7 @@ public class ClientMovement : MonoBehaviour
     void Start()
     {
         Commandes = GameManager.theCommands;
-        products = new string[] { "Breed", "Sausage", "Egg" };
+        products = new string[] { "Sausage", "Steak", "Egg" };
 
         firstChoice = products[Random.Range(0, products.Length)];
         secondChoice = products[Random.Range(0, products.Length)];
@@ -64,10 +64,10 @@ public class ClientMovement : MonoBehaviour
                 stayCheck = true;
                 transform.Rotate(0, -60, 0);
             }
-            if (Input.GetKeyDown(KeyCode.P))
-            {
-                checkPoint = true;
-            }
+            //if (Input.GetKeyDown(KeyCode.P))
+            //{
+            //    checkPoint = true;
+            //}
         }
 
         if (checkPoint == true)
